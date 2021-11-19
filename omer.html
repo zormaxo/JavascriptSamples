@@ -11,20 +11,19 @@
 <body>
   <script>
 
-  function makeUser() {
-    return {
-      name: "John",
-      ref: this
-    };
-  }
 
-  let user = makeUser();
+  let user = {
+    name: "John",
+    years: 30
+  };
 
-  alert(user.ref.name);
+  let [ name, age, isAdmin = false ] = Object.values(user);
 
-
-
+  alert(name); // John
+  alert(age); // 30
+  alert(isAdmin); // false
   </script>
+  <script src="omer.js"></script>
 </body>
 
 </html>
