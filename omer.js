@@ -1,1 +1,3 @@
-console.log("I'm JavaScript!");
+function msg(){  
+ alert("Hello Javatpoint");  
+}  

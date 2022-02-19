@@ -11,49 +11,59 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <style></style>
   </head>
 
   <body>
-    <script>
-      class Clock {
-        constructor({ template }) {
-          this.template = template;
-        }
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a naturting text below as a naturting text below as a naturting text below as a naturting text below as a natural lead-in to additional content. This content is a little bit longer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a short card.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        render = () => {
-          let date = new Date();
-
-          let hours = date.getHours();
-          if (hours < 10) hours = "0" + hours;
-
-          let mins = date.getMinutes();
-          if (mins < 10) mins = "0" + mins;
-
-          let secs = date.getSeconds();
-          if (secs < 10) secs = "0" + secs;
-
-          let output = this.template.replace("h", hours).replace("m", mins).replace("s", secs);
-
-          console.log(output);
-        }
-
-        stop() {
-          clearInterval(this.timer);
-        }
-
-        start() {
-          this.render();
-          this.timer = setInterval(this.render, 1000);
-        }
-      }
-
-      let clock = new Clock({ template: "h:m:s" });
-      clock.start();
-    </script>
+    <script src="omer.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script></script>
   </body>
 </html>
