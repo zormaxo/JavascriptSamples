@@ -1,0 +1,19 @@
+{
+  "name": "javascriptsamples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "alert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zormaxo/JavascriptSamples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zormaxo/JavascriptSamples/issues"
+  },
+  "homepage": "https://github.com/zormaxo/JavascriptSamples#readme"
+}
