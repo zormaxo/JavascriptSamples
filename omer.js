@@ -1,3 +1,5 @@
-function msg(){  
- alert("Hello Javatpoint");  
-}  
+let car = 'Audi omer';
+const asdf = 5;
+function sayOmer() {
+  alert(car);
+}
