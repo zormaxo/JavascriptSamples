@@ -1,6 +1,7 @@
-let didShowMessage = false;
+const didShowMessage = false;
 
-function showMessage(params) {
+function showMessage() {
+  let omer = 5;
   const message = 'I like logs';
 
   for (let i = 0; i < 5; i++) {

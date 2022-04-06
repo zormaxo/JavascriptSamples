@@ -12,42 +12,37 @@
     <style></style>
   </head>
   <body>
-    <div class="spinner-border" role="status">
-      <span class="visually-hidden">Loading...</span>
-    </div>
-    <div class="spinner-grow" role="status">
-      <span class="visually-hidden">Loading...</span>
-    </div>
-    <div class="spinner-border m-5" role="status">
-      <span class="visually-hidden">Loading...</span>
-    </div>
-    <div class="d-flex justify-content-center">
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-    </div>
+    <button class="btn btn-primary" type="button" data-bs-toggle="tooltip" title="Disabled tooltip">
+      Disabled button
+    </button>
+    <button class="btn btn-primary" type="button">Disabled button</button>
+    <button class="btn btn-primary" type="button">Disabled button</button>
+    <button class="btn btn-primary" type="button" data-bs-toggle="tooltip" title="Disabled tooltip">
+      Disabled button
+    </button>
+    <button class="btn btn-primary" type="button">Disabled button</button>
+    <button class="btn btn-primary" type="button">Disabled button</button>
+    <span
+      class="d-inline-block"
+      data-bs-toggle="tooltip"
+      data-bs-container="body"
+      data-bs-placement="top"
+      title="Disabled tooltip">
+      <button class="btn btn-primary" type="button" disabled>Disabled button</button>
+    </span>
+    <button class="btn btn-primary" type="button" data-bs-toggle="tooltip" title="Disabled tooltip">
+      Disabled button
+    </button>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"></script>
     <script src="omer.js"></script>
-    <script type="module">
-      import { sayHi } from './say.js';
-      import { cara } from './say.js';
-      
-      alert(cara);
-      document.body.innerHTML = sayHi('John');
-    </script>
     <script>
-      // sayOmer();
-      alert(car);
-    </script>
-    <script type="module">
-      let aa = 4;
-      alert('asdf');
-    </script>
-    <script>
-      alert(aa);
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
     </script>
   </body>
 </html>
